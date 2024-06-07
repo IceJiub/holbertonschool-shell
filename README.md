@@ -1,2 +1,2 @@
 # The basics of Shell
-This repository contains scripts using shell.
+The aim of this project is to learn how to use shell command and what they do.
