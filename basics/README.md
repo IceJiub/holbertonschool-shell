@@ -11,7 +11,7 @@ $
 ```
 
 ## 1-listit
-Script that display the contents list of your current directory.
+Script that displays the contents list of your current directory.
 
 Example:
 ```
@@ -89,7 +89,7 @@ $
 ```
 
 ## 6-firstdirectory
-Script that creates a directory named my_first_directory in the /tmp/ directory.
+Script that creates a directory named ```my_first_directory``` in the ```/tmp/``` directory.
 
 Example:
 ```
@@ -100,7 +100,7 @@ $
 ```
 
 ## 7-movethatfile
-Script that move the file betty from /tmp/ to /tmp/my_first_directory
+Script that moves the file betty from /tmp/ to /tmp/my_first_directory
 
 Example:
 ```
@@ -109,4 +109,43 @@ $ ls /tmp/my_first_directory/
 betty
 $
 ```
+
+## 8-firstdelete
+Script that deletes the file betty in /tmp/my_first_directory
+
+Example:
+```
+$ ./8-firstdelete
+$ ls /tmp/my_first_directory/
+$
+```
+
+## 9-firstdirdeletion
+Script that deletes the directory my_first_directory that is in the /tmp directory
+
+Example:
+```
+$ ./9-firstdirdeletion
+$ file /tmp/my_first_directory
+/tmp/my_first_directory: cannot open `/tmp/my_first_directory' (No such file or directory)
+$
+```
+
+## 10-back
+Script that changes the working directory to the previous one.
+
+Example:
+```
+julien@ubuntu:/tmp$ pwd
+/tmp
+julien@ubuntu:/tmp$ cd /var
+julien@ubuntu:/var$ pwd
+/var
+julien@ubuntu:/var$ source ./10-back
+/tmp
+julien@ubuntu:/tmp$ pwd
+/tmp
+```
+
+
 
