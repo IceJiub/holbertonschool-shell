@@ -134,7 +134,36 @@ julien@ubuntu:/tmp/h$
 ```
 
 ## 9-John_Doe
-This script sets the mode of the file ```hello``` as follows : ```-rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello```
+This script sets the mode of the file ```hello``` as follows : ```-rwxr-x-wx```
 
 Example:
+```
+root@18072:/tmp# ls -l
+total 4
+-rwxr-xr-x 1 root root 27 Jun 10 14:12 9-John_Doe
+-rw-r--r-- 1 root root  0 Jun 10 14:13 hello
+root@18072:/tmp# ./9-John_Doe 
+root@18072:/tmp# ls -l
+total 4
+-rwxr-xr-x 1 root root 27 Jun 10 14:12 9-John_Doe
+-rwxr-x-wx 1 root root  0 Jun 10 14:13 hello
+```
+
+## 10-mirror_permissions
+This script sets the mode of the file ```hello``` the same as ```olleh```'s mode.
+
+Example:
+```
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 julien julien 42 Sep 20 14:45 10-mirror_permissions
+-rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello
+-rw-rw-r-- 1 julien julien  0 Sep 20 14:43 olleh
+julien@ubuntu:/tmp/h$ ./10-mirror_permissions 
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 julien julien 42 Sep 20 14:45 10-mirror_permissions
+-rw-rw-r-- 1 julien julien 23 Sep 20 14:25 hello
+-rw-rw-r-- 1 julien julien  0 Sep 20 14:43 olleh
+julien@ubuntu:/tmp/h$ 
 ```
