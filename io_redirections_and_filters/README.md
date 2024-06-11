@@ -1,0 +1,1 @@
+This directory contains shell scripts about I/O redirections and filters.
