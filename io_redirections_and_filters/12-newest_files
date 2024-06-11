@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -not -path "." -printf "%T+ %p\n" | sort -r | head -10 | cut -c 34-
+ls -lt | grep '^-' | head -10 | cut -c 40-
