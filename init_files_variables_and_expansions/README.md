@@ -1,0 +1,1 @@
+This directory contains shells scripts about init files, variables and expansions.
