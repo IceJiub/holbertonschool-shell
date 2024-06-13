@@ -1,2 +1,3 @@
 #!/bin/bash
-echo $PATH | tr -d '[a-zA-Z]' | tr -d '/' | wc -c
+echo $PATH | tr ':' '\n' | wc -l
+
